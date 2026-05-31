@@ -1,26 +1,29 @@
 // c++ code to print the nth fibo term 
 
+// first function for print the nth fibo term using for loop
+
 #include <iostream>
 using namespace std;
 
-int main() {
+int fibo_term_1(int n){
     int a = 0;
     int b = 1;
-    int n;
-    cout << "which nth fibo term you want : ";
-    cin >> n;
+    int new_term = 0;
     if (n ==1) {
-        cout << "0" << endl;
+        return 0;
     } else if (n ==2) {
-        cout << "1" << endl;;
+        return 1;
     } else if (n>2) {
-        int new_term = 0;
         for (int i = 0;i<n-2;i++) {
             new_term = a+b;
             a = b;
             b= new_term;
         }
-        cout << new_term << endl;
     }
+    return new_term;
+}
+
+int main() {
+    cout << fibo_term_1(8) << endl;
     return 0;
 }
