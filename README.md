@@ -6,3 +6,9 @@ i will do dsa problems and update my progrss in this folder
  will use python for now and will also try to use c++ also.
  <br>
  solved question to find the nth fibo termu using py and c++ both . 
+ <br>
+ 31-05-26
+ <br>
+ started dsa with c++ along with python for regular practice of problem solving 
+ <br>
+ done with fibonacci series and learned about loops , function and recusrion
