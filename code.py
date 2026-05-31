@@ -8,9 +8,9 @@ n = int(input("which nth fibo num you want to print:"))
 
 if n <0:
     print("enter only positive numbers.")
-elif n == 0:
-    print(0)
 elif n == 1:
+    print(0)
+elif n == 2:
     print(1)
 else:
 
