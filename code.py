@@ -5,7 +5,7 @@ def fibo_term_1(n):
     b = 1
 
    
-    if n <0:
+    if n <=0:
         print("enter only positive numbers.")
     elif n == 1:
         print(0)
@@ -25,3 +25,21 @@ def fibo_term_1(n):
 
 def fibo_term_2(n):
     
+    if n ==1:
+        print(0)
+        return
+    elif n ==2:
+        print(1)
+        return
+    elif n<=0:
+        print("enter only positve numbers.")
+    def fibo(a,b,c):
+        if c ==n:
+            print(b)
+            return
+        
+        fibo(b,b+a,c+1)          
+                    
+    fibo(0,1,2)
+
+fibo_term_2(9)
