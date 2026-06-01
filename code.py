@@ -3,8 +3,7 @@
 def fibo_term_1(n):
     a = 0
     b = 1
-
-   
+  
     if n <=0:
         print("enter only positive numbers.")
     elif n == 1:
@@ -33,21 +32,23 @@ def fibo_term_2(n):
         return
     elif n<=0:
         print("enter only positve numbers.")
-    def fibo(a,b,c):
-        if c ==n:
-            print(b)
-            return
-        
-        fibo(b,b+a,c+1)          
-                    
-    fibo(0,1,2)
+    else:
+        def fibo(a,b,c):
+            if c ==n:
+               print(b)
+            else:
+                return fibo(b,b+a,c+1)          
+                        
+        return fibo(0,1,2)
 
-fibo_term_2(9)
 
 # optimised apporch using recursion
 
 def fibo_term_3(n):
     if n<=1:
         return n
-    else:
-        fibo_term_3(n-1) + fibo_term_3(n-2)
+    return print(fibo_term_3(n-1) + fibo_term_3(n-2))
+
+fibo_term_1(9)
+fibo_term_2(9)
+fibo_term_3(9)

@@ -48,11 +48,19 @@ int fibo_term_2(int n) {
     return fibo(0,1,2,n);
 }
 
-
+int fibo_term_3(int n) {
+    if(n<=1){
+        return 0;
+    }
+    else {
+        return fibo_term_3(n-1) + fibo_term_3(n-2);
+    }
+}
 
 int main() {
     cout << fibo_term_1(9) << endl;
     cout << fibo_term_2(9) << endl;
+    cout << fibo_term_3(4) << endl;
     return 0;
 }
 
