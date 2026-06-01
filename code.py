@@ -43,3 +43,11 @@ def fibo_term_2(n):
     fibo(0,1,2)
 
 fibo_term_2(9)
+
+# optimised apporch using recursion
+
+def fibo_term_3(n):
+    if n<=1:
+        return n
+    else:
+        fibo_term_3(n-1) + fibo_term_3(n-2)
